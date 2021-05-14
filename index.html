@@ -11,12 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header block-->
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a class="logo" href="index.html">Web<span class="logo__label">Studio</span></a>
         <nav class="nav">
           <ul class="nav__list">
@@ -37,7 +37,7 @@
               <svg class="header-contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com la
+              info@devstudio.com
             </a>
           </li>
           <li class="header-contact__item">
@@ -62,11 +62,11 @@
       <!--Advantages block-->
       <section class="section advantage">
         <div class="container">
-          <h2 class="hidden-title">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantage__list">
             <li class="advantage__item">
-              <div class="svg-box">
-                <svg class="svg-box__icon">
+              <div class="advantage__svg-box">
+                <svg class="advantage__icon">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -76,8 +76,8 @@
               </p>
             </li>
             <li class="advantage__item">
-              <div class="svg-box">
-                <svg class="svg-box__icon">
+              <div class="advantage__svg-box">
+                <svg class="advantage__icon">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -87,8 +87,8 @@
               </p>
             </li>
             <li class="advantage__item">
-              <div class="svg-box">
-                <svg class="svg-box__icon">
+              <div class="advantage__svg-box">
+                <svg class="advantage__icon">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -98,8 +98,8 @@
               </p>
             </li>
             <li class="advantage__item">
-              <div class="svg-box">
-                <svg class="svg-box__icon">
+              <div class="advantage__svg-box">
+                <svg class="advantage__icon">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -139,7 +139,7 @@
             <li class="team-card__item">
               <img src="./images/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="270" height="260" />
               <h3 class="team-card__title">Игорь Демьяненко</h3>
-              <p lang="en">Product Designer</p>
+              <p class="team-card__text" lang="en">Product Designer</p>
               <ul class="social social__list">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -174,7 +174,7 @@
             <li class="team-card__item">
               <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина" width="270" height="260" />
               <h3 class="team-card__title">Ольга Репина</h3>
-              <p lang="en">Frontend Developer</p>
+              <p class="team-card__text" lang="en">Frontend Developer</p>
               <ul class="social social__list">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -209,7 +209,7 @@
             <li class="team-card__item">
               <img src="./images/НиколайТарасов.jpg" alt="Николай Тарасов" width="270" height="260" />
               <h3 class="team-card__title">Николай Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <p class="team-card__text" lang="en">Marketing</p>
               <ul class="social social__list">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -244,7 +244,7 @@
             <li class="team-card__item">
               <img src="./images/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="270" height="260" />
               <h3 class="team-card__title">Михаил Ермаков</h3>
-              <p lang="en">UI Designer</p>
+              <p class="team-card__text" lang="en">UI Designer</p>
               <ul class="social social__list">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -425,7 +425,7 @@
           </div>
           <label for="comment" class="modal__label">Комментарий</label>
           <textarea class="modal__textarea" name="user-comment" id="comment" placeholder="Введите текст"></textarea>
-          <input type="checkbox" name="user-contract" id="contract" class="hidden-title modal__input-hidden" />
+          <input type="checkbox" name="user-contract" id="contract" class="visually-hidden modal__input-hidden" />
           <label for="contract" class="modal__label-contract"
             >Соглашаюсь с рассылкой и принимаю <a href="#" class="modal__link-contract--color">Условия договора</a>
           </label>
