@@ -365,6 +365,10 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.client__link:hover, .client__link:focus {
+  border: 1px solid var(--accent-color);
+  transition: border var(--animation);
+}
 
 .client__link:hover,
 .client__link:focus {
