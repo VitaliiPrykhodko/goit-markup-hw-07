@@ -22,12 +22,6 @@
   }
 }
 
-.client__link:hover,
-.client__link:focus {
-  border: 1px solid var(--accent-color);
-  transition: border var(--animation);
-}
-
 .client__icon {
   width: 106px;
   height: 60px;

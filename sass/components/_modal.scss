@@ -23,13 +23,13 @@
   border-radius: 100%;
   cursor: pointer;
   transition: background-color var(--animation);
-}
 
-.modal__btn:hover,
-.modal__btn:focus {
-  fill: var(--accent-color);
-  background-color: var(--btn-color-text);
-  transition: fill 250ms linear;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    background-color: var(--btn-color-text);
+    transition: fill 250ms linear;
+  }
 }
 
 .modal__title {
